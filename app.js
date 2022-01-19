@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 // import monggose
 const mongoos = require('mongoose')
-mongoos.connect('mongodb://127.0.0.1:27017/db_staycation')
+mongoos.connect('mongodb+srv://codeathome:Ghiffari_Al10@cluster0.3cqax.mongodb.net/db_staycation?retryWrites=true&w=majority')
 
 // import method-override 
 const methodOverride = require('method-override')

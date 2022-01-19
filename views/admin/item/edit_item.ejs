@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <label for="name">Category</label>
                     <select name="categoryId" class="form-control">
-                        <option value="<%= item.category._id %>">---<%= item.category.name %>---</option>
+                        <option value="<%= category._id %>">---<%= category.name %>---</option>
                         <% for(let item of category) { %>
                         <option value="<%= item.id %>"><%= item.name %></option>
                         <% } %>

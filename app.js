@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors')
 // import monggose
 const mongoos = require('mongoose')
 mongoos.connect('mongodb+srv://codeathome:Ghiffari_Al10@cluster0.3cqax.mongodb.net/db_staycation?retryWrites=true&w=majority')
@@ -23,6 +24,8 @@ const adminRouter = require('./routes/admin');
 const apiRouter = require('./routes/api'); 
 
 var app = express();
+// cors
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
